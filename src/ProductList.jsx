@@ -250,10 +250,10 @@ function ProductList() {
     };
 
     const handleAddToCart = (product) => {
-        dispatch(addItem(product)); // from CartSlice
+        dispatch(addItem(product)); // add item to cart
         setAddedToCart((prevState) => ({ 
             ...prevState,
-            [product.name]: true, 
+            [product.name]: true, // display item in cart 
         }));
     };
 
